@@ -1,0 +1,15 @@
+select salary
+from employees
+where first_name = 'Lex' and last_name = 'De Haan';
+
+select first_name
+from employees
+where job_id = 'FI_ACCOUNT' and salary < 8000;
+
+select first_name
+from employees
+where last_name like '%ll%' or last_name like '%kk%';
+
+select first_name
+from employees
+where not department_id = 80 and not department_id = 110
